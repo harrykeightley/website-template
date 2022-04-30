@@ -1,7 +1,10 @@
 {
+  "extends": "./node_modules/gts/tsconfig-google.json",
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "rootDir": "./src/",
+    "baseUrl": "./src/",
+    "outDir": "build",
+    // "target": "es5",
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -13,8 +16,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    "src/**/*.tsx",
+    "src/**/*.ts",
+  ]
 }
