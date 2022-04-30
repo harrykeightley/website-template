@@ -1,22 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Harry's Website Template
+This is my website template, using the web techonolgies I've found to make rapid development as pain free as possible.
+
+## Technologies used
+- [Typescript](https://www.typescriptlang.org/), which has made the most significant improvement so far to development speed.
+- [Next.js](https://nextjs.org/), which handles routing, code splitting, and much more, while providing a much better project structure.
+- [Tailwindcss](https://tailwindcss.com/), A lightweight and flexible css styling library.
+- [gts](https://github.com/google/gts), An eslint preset for formatting typescript projects.
 
 ## Getting Started
 
-First, run the development server:
-
+First, install the dependencies with your preferred package manager. I'm using `yarn`, but it doesn't make much difference.
 ```bash
-npm run dev
+yarn
 # or
+npm install
+```
+Then run the development server.
+```bash
 yarn dev
+# or
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Cloud providers
+If a cloud backend is necessary, I've come to prefer GCP, using firebase wherever possible. 
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Deployment
+This stack makes it very easy with next.js to make a static export that can then be hosted in a cloud provider bucket. If instead you
+need a live server, I tend to make a docker container for it to live in and put it on cloud run or an equivalent service.
 
 ## Learn More
 
@@ -26,9 +39,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
