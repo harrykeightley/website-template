@@ -24,6 +24,18 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Project structure
+- `src`:
+  - `components`: Reusable react components between pages.
+  - `contexts`: State storage/providers to be used with the `useContext` hook.
+  - `layouts`: Common page wrappers e.g. providing headers and footers or state providers.
+  - `lib`: Non-component libraries containing app functionality or logic.
+  - `pages`: Next.js pages corresponding 1-1 with the website pages.
+  - `public`: Public files e.g. static images, favicons or fonts.
+  - `styles`: Global and scoped css files. 
+  - `types`: Reusable typescript types.
+- Other outer level files: All the config files
+
 ## Cloud providers
 If a cloud backend is necessary, I've come to prefer GCP, using firebase wherever possible. 
 
